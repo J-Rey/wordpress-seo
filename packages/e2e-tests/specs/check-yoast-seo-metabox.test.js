@@ -9,7 +9,7 @@ import {
 describe( 'Yoast SEO plugin metabox', () => {
 	beforeEach( async () => {
 		// Testing this with Yoast plugin installed and activated
-		// on my WordPress install  (wp-env start run from the plugin folder)
+		// on my WordPress install
 
 		// await installPlugin( 'wordpress-seo' );
 	} );

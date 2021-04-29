@@ -4,8 +4,20 @@ e2e-tests implementation for Yoast SEO plugin.
 
 ## Usage
 
-Inside your `wordpress-seo` run the following commands:
+### Installation
 
+Start by cloning this repository:
+
+`git clone https://github.com/Yoast/wordpress-seo.git`
+Then
+cd wordpress-seo
+
+To install all the necessary dependencies, run the following commands:
+
+composer install
+yarn
+grunt build
+After cloning the 
 ```
 cd packages/e2e-tests
 yarn
@@ -15,14 +27,14 @@ to install the packages dependencies.
 Then the command `yarn test` to run the tests.
 
 All the tests are located in the `specs` folder.
+### WordPress local environment
+
 
 ## Configuration
-
 ### Headless mode
 
 The default configuration of the packages runs the test in headless mode.
 If you want to run in non-headless mode, uncomment the ` // headless: false,` line in `jest.puppeteer.config.js`.
-
 ## Slow Motion
 
 If you want to slows down Puppeteer operations by a specified amount of milliseconds,
