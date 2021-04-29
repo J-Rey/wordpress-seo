@@ -6,31 +6,26 @@ e2e-tests implementation for Yoast SEO plugin.
 
 ### Installation
 
-Start by cloning this repository:
+1. Start by cloning this repository: `git clone https://github.com/Yoast/wordpress-seo.git`.
+2. Then move to the repository folder `cd wordpress-seo`.
+3. To install all the necessary dependencies, run the following commands:
 
-`git clone https://github.com/Yoast/wordpress-seo.git`
-Then
-cd wordpress-seo
-
-To install all the necessary dependencies, run the following commands:
-
+```
 composer install
 yarn
 grunt build
-After cloning the 
 ```
-cd packages/e2e-tests
-yarn
-```
-to install the packages dependencies.
 
-Then the command `yarn test` to run the tests.
+4. Now you can start a WordPress local environment using [@wordpress/env](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/).
 
-All the tests are located in the `specs` folder.
-### WordPress local environment
+Make sure Docker is running on your machine and run `wp-env start` to launch the enviromnment.
 
+5. Move to the package folder by doing `cd packages/e2e-tests`.
+
+6. Run the command `yarn test` to run the tests.
 
 ## Configuration
+
 ### Headless mode
 
 The default configuration of the packages runs the test in headless mode.
