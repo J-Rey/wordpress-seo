@@ -6,7 +6,7 @@ import {
 	installPlugin,
 } from '@wordpress/e2e-test-utils';
 
-describe( 'Edit Posts', () => {
+describe( 'Yoast SEO plugin metabox', () => {
 	beforeEach( async () => {
 		// Testing this with Yoast plugin installed and activated
 		// on my WordPress install  (wp-env start run from the plugin folder)
