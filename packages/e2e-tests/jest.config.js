@@ -1,4 +1,8 @@
 module.exports = { 
     verbose: true,
-    preset: "jest-puppeteer"
+    preset: "jest-puppeteer",
+    transform: {
+        "\\.js$": ['babel-jest', {rootMode: "upward"}]
+    },
+    setupFilesAfterEnv: ['./jest.setup.js']
 };
